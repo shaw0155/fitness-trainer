@@ -1,0 +1,30 @@
+.videos {
+  background-color: $color-black;
+  padding: 6rem;
+  text-align: center;
+  @include flex-center-center;
+  flex-direction: column;
+  gap: 6rem;
+
+  p {
+    margin: 1rem auto;
+    width: 80%;
+  }
+
+  &-videos-container {
+    display: flex;
+    gap: 8rem;
+
+    .video {
+      width: 80%;
+
+      &-player {
+        height: 50% !important;
+      }
+    }
+  }
+}
+
+.video-player {
+  height: 80%;
+}

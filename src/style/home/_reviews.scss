@@ -1,0 +1,73 @@
+.reviews {
+  position: relative;
+  overflow: hidden;
+  background-color: black;
+
+  &-title {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    font-weight: 600;
+    font-style: italic;
+
+    @media (max-width: 1400px) {
+      top: 1%;
+      right: 30%;
+    }
+    @media (max-width: 1100px) {
+      right: 18%;
+    }
+    @media (max-width: 800px) {
+      right: 10%;
+    }
+    @media (max-width: 650px) {
+      right: 0%;
+      left: 3%;
+    }
+  }
+
+  &-img {
+    height: 90vh;
+    mask-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.666) 0%,
+      rgb(0, 0, 0) 100%
+    );
+
+    @media (max-width: 650px) {
+    }
+  }
+
+  .carousel {
+    width: 50%;
+    height: 35%;
+    position: absolute;
+    top: 45%;
+    right: 2%;
+
+    @media (max-width: 1400px) {
+      top: 60%;
+      right: 5%;
+    }
+
+    @media (max-width: 1400px) {
+      background-color: #b70a0a6d;
+      width: 60%;
+      right: 25%;
+    }
+
+    @media (max-width: 1000px) {
+      width: 80%;
+      right: 10%;
+    }
+
+    p {
+      margin-top: 3rem;
+      color: $color-primary;
+    }
+
+    .slick-slide {
+      text-align: center;
+    }
+  }
+}

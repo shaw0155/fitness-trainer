@@ -1,0 +1,10 @@
+.whatido {
+  margin: 0 5rem;
+  &-content {
+    align-items: flex-start;
+    text-align: start;
+  }
+  &-p {
+    color: $color-black-text;
+  }
+}

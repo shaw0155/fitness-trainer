@@ -1,0 +1,126 @@
+.App {
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+$color-primary-lighter: #f03e3e;
+$color-primary: #e11313;
+$color-primary-darker: #990000;
+$color-black: #000;
+$color-black-text: #333;
+$color-white: #fff;
+$color-gray: #e7e7e7;
+$color-primary-gradient: linear-gradient(180deg, #990000 0%, #ea0000 70%);
+
+@mixin shadow {
+  box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 0.151);
+}
+
+@mixin flex-center-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin white-btn {
+  text-decoration: none;
+  background-color: $color-white;
+  color: $color-primary;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 1.5rem 3rem;
+  text-transform: capitalize;
+  border: 1px solid $color-white;
+  transition: all 0.4s;
+
+  &:hover {
+    color: $color-white;
+    background-color: transparent;
+  }
+}
+@mixin btn-red {
+  background-color: $color-primary;
+  font-size: 1.8rem;
+  text-decoration: none;
+  font-weight: 500;
+  text-transform: capitalize;
+  padding: 1rem 3rem;
+  border-radius: 9px;
+  transition: all 0.4s;
+  color: $color-white;
+
+  &:hover {
+    background-color: $color-primary-darker;
+  }
+}
+
+@mixin btn-black {
+  background-color: $color-black;
+  font-size: 1.6rem;
+  text-decoration: none;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 1rem 3rem;
+  border-radius: 9px;
+  transition: all 0.4s;
+  color: $color-white;
+  border: 1px solid $color-black;
+
+  &:hover {
+    background-color: $color-white;
+    color: $color-black;
+  }
+}
+
+@mixin header {
+  height: 90vh;
+  margin-top: 6rem;
+  background-color: black;
+}
+
+h1 {
+  text-transform: capitalize;
+  font-size: 6rem;
+  color: $color-white;
+  letter-spacing: 1.2px;
+}
+
+h2 {
+  text-transform: capitalize;
+  font-size: 4rem;
+  font-weight: 400;
+  color: $color-white;
+}
+
+h3 {
+  text-transform: capitalize;
+  font-size: 2.2rem;
+  color: $color-white;
+}
+h4 {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 3.4rem;
+  font-weight: 500;
+  color: #ffffffdc;
+}
+
+span {
+  color: $color-primary;
+}
+
+hr {
+  width: 90%;
+}
+
+@import "home/Home";
+@import "Navbar";
+@import "footer";
+@import "about/about";
+@import "onlinecoaching/Onlinecoaching";
+@import "conatct/contact";

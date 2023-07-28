@@ -1,0 +1,27 @@
+.ant-form-item {
+  padding: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.ant-input {
+  padding: 0.5rem;
+  font-size: 1.6rem;
+}
+
+.ant-btn-primary {
+  @include btn-black;
+  span {
+    padding: 0.8rem 3rem;
+    height: auto !important;
+    font-size: 1.8rem;
+    color: $color-white !important;
+  }
+
+  &:hover {
+    background-color: white !important;
+  }
+  &:hover span {
+    color: $color-black-text !important;
+  }
+}

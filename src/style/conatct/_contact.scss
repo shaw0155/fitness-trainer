@@ -1,0 +1,49 @@
+@import "header";
+@import "contactForm";
+
+.contact-body {
+  padding: 9.6rem;
+  display: flex;
+  gap: 10%;
+
+  @media (max-width: 1400px) {
+    flex-direction: column;
+    gap: 9rem;
+  }
+  @media (max-width: 800px) {
+    padding: 4rem;
+  }
+
+  p {
+    color: $color-black-text;
+  }
+  .form-container {
+    width: 40%;
+    @media (max-width: 1400px) {
+      width: 80%;
+    }
+  }
+}
+
+.right-line {
+  margin: 9rem 0;
+  @media (max-width: 1400px) {
+    margin: 4rem 0;
+  }
+}
+
+.right-down {
+  display: flex;
+  gap: 8rem;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
+}
+
+.contact-container-title {
+  text-transform: uppercase;
+  font-style: italic;
+  color: $color-black-text;
+  margin-bottom: 4rem;
+}

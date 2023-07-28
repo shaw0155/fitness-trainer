@@ -1,0 +1,50 @@
+.program-cards {
+  @include flex-center-center;
+  margin: 10rem;
+  gap: 10%;
+
+  @media (max-width: 1200px) {
+    margin: 5rem 3rem;
+    gap: 3rem;
+  }
+  @media (max-width: 850px) {
+    flex-direction: column;
+  }
+
+  .program-card {
+    @include flex-center-center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 45rem;
+    width: 35rem;
+    padding: 4rem 4rem;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 0.151);
+    transition: all 0.4s;
+
+    &-content {
+      font-size: 1.8rem;
+      font-weight: 500;
+    }
+
+    &:hover {
+      transform: translateY(-4rem);
+    }
+
+    &:first-child {
+      background-color: rgb(65, 65, 65);
+    }
+
+    &:last-child {
+      background-color: $color-black;
+    }
+
+    &-btn {
+      text-decoration: none;
+      background-color: rgb(137, 137, 137);
+      font-size: 1.4rem;
+      padding: 0.8rem 2rem;
+      border-radius: 10px;
+    }
+  }
+}

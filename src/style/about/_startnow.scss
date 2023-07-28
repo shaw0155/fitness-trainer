@@ -1,0 +1,47 @@
+.startnow {
+  background: $color-primary-gradient;
+  display: flex;
+
+  @media (max-width: 950px) {
+    flex-direction: column;
+  }
+
+  &-btn {
+    @include white-btn;
+  }
+
+  &-content {
+    padding: 8rem 16rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+
+    @media (max-width: 1700px) {
+      padding: 4rem 8rem;
+      gap: 2rem;
+    }
+
+    @media (max-width: 950px) {
+      align-items: center;
+      text-align: center;
+      gap: 3rem;
+    }
+  }
+
+  &-left {
+    max-width: 45%;
+    background-color: $color-primary-darker;
+    @media (max-width: 950px) {
+      max-width: 100%;
+    }
+  }
+
+  &-right {
+    max-width: 50%;
+    background: $color-primary-gradient;
+    @media (max-width: 950px) {
+      max-width: 100%;
+    }
+  }
+}

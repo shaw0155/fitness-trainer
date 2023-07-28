@@ -1,0 +1,70 @@
+.onlinecoaching-bg {
+  background: $color-primary-gradient;
+}
+
+.onlinecoaching {
+  display: flex;
+  padding: 3rem 0;
+
+  @media (max-width: 750px) {
+    flex-direction: column;
+  }
+
+  &-content {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 12rem;
+    padding-right: 0;
+    text-align: right;
+    align-items: flex-end;
+
+    @media (max-width: 1200px) {
+      padding: 0rem;
+    }
+
+    @media (max-width: 750px) {
+      max-width: 100%;
+      text-align: center;
+      align-items: center;
+    }
+
+    h2 {
+      color: $color-black;
+      font-weight: 600;
+    }
+
+    p {
+      max-width: 80%;
+      font-size: 2rem;
+      line-height: 4rem;
+
+      @media (max-width: 1200px) {
+        max-width: 95%;
+      }
+    }
+  }
+
+  &-img-container {
+    padding: 10rem;
+    padding-left: 8rem;
+
+    @media (max-width: 1200px) {
+      padding: 4rem;
+    }
+
+    @media (max-width: 750px) {
+      width: 100%;
+    }
+
+    img {
+      width: 40rem;
+      @include shadow;
+      border-radius: 9px;
+      @media (max-width: 1000px) {
+        width: 30rem;
+      }
+    }
+  }
+}

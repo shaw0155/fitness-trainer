@@ -1,0 +1,28 @@
+footer {
+  background-image: linear-gradient(180deg, #990000 0%, #ea0000 70%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6rem;
+  padding: 6rem 0;
+  padding-bottom: 1rem;
+  text-align: center;
+
+  h1 {
+    font-size: 8rem;
+  }
+
+  span {
+    color: black;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  .icons-container {
+    img {
+      margin-right: 3rem;
+    }
+  }
+}

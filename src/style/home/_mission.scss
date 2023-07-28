@@ -1,0 +1,40 @@
+.mission-card {
+  background-color: $color-black;
+  @include flex-center-center;
+  gap: 10rem;
+  padding: 9rem 5rem;
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    padding: 5rem;
+    gap: 5rem;
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: flex-start;
+
+    @media (max-width: 1000px) {
+      align-items: center;
+      text-align: center;
+    }
+
+    &-title {
+      font-weight: 600;
+    }
+
+    &-btn {
+      @include btn-red;
+    }
+  }
+
+  img {
+    width: 35%;
+
+    @media (max-width: 1000px) {
+      width: 50%;
+    }
+  }
+}

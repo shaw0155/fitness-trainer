@@ -1,0 +1,41 @@
+.onlinecoaching-header {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.734) 0%,
+      rgba(0, 0, 0, 0.733) 40%,
+      rgba(0, 0, 0, 0.715) 100%
+    ),
+    url(https://gblryxlyxvzcajnibwcb.supabase.co/storage/v1/object/public/kareem-amr/onlinecoaching-cover.jpg)
+      no-repeat center;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+
+  &-btn {
+    @include btn-red;
+    margin-top: 8rem;
+
+    @media (max-width: 850px) {
+      margin-top: 4rem;
+    }
+  }
+
+  &-content {
+    position: absolute;
+    width: 50%;
+    top: 25%;
+    right: 25%;
+    text-align: center;
+    @include flex-center-center;
+    flex-direction: column;
+
+    @media (max-width: 850px) {
+      top: 10%;
+    }
+
+    h1 {
+      font-size: 7rem;
+      text-transform: uppercase;
+    }
+  }
+}
